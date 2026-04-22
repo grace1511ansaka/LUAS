@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luas Segitiga</title>
+</head>
+<body>
+
+    <h2>Hitung Luas Segitiga</h2>
+
+    <label>Alas:</label>
+    <input type="number" id="alas"><br><br>
+
+    <label>Tinggi:</label>
+    <input type="number" id="tinggi"><br><br>
+
+    <button onclick="hitungLuas()">Hitung</button>
+
+    <h3 id="hasil"></h3>
+
+    <script>
+        function hitungLuas() {
+            let alas = document.getElementById("alas").value;
+            let tinggi = document.getElementById("tinggi").value;
+
+            let luas = 0.5 * alas * tinggi;
+
+            document.getElementById("hasil").innerText = 
+                "Luas segitiga = " + luas;
+        }
+    </script>
+
+</body>
+</html>
